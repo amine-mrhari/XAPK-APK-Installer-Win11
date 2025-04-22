@@ -34,6 +34,7 @@ XAPK-APK-Installer-Win11/
 ---
 
 ## 🚀 Features
+
 - Installs standard APK files (`Install-apk.ps1`).
 - Handles split APK/XAPK bundles (`Install-xapk.ps1`).
 - Automates OBB file deployment for games/apps.
@@ -46,9 +47,11 @@ XAPK-APK-Installer-Win11/
 ### For APK Files
 1. Place your `.apk` file in the `XAPK-APK-Installer-Win11` folder (e.g., `app-name.apk`).
 2. Run in PowerShell:
-   ```powershell
+   
+   ```
    Set-ExecutionPolicy Bypass -Scope Process -Force
    .\Install-apk.ps1
+   ```
 
 ### For XAPK Files
 Place your .xapk file in the XAPK-APK-Installer-Win11 folder (e.g., app-name.xapk).
@@ -57,25 +60,33 @@ Ensure aapt.exe is in the XAPK-APK-Installer-Win11 folder.
 
 Run:
 Set-ExecutionPolicy Bypass -Scope Process -Force
+
 .\Install-xapk.ps1
 
-🔧 Troubleshooting
+## 🔧 Troubleshooting
 Error	Solution
 No APK files found	- Verify the XAPK file is valid (test with 7-Zip)
+
 - Ensure aapt.exe is present
+  
 adb.exe: no devices found	- Start WSA/emulator first
+
 - Check ADB port in script
+
 INSTALL_FAILED_MISSING_SPLIT	Use Install-xapk.ps1 instead of Install-apk.ps1
+
 Permission Denied	Run PowerShell as Administrator
-⚙️ Script Configuration
+
+## ⚙️ Script Configuration
 Edit these variables in the scripts if needed:
 
 # In Install-apk.ps1/Install-xapk.ps1
+```
 $apkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\app-name.apk"
 $xapkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\app-name.xapk"
 $adbPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\adb.exe"
 $adbPort = "127.0.0.1:58526"  # WSA default port
-
+```
 
 ## 📝 Notes
 WSA Setup: Enable Developer Mode in Windows Subsystem for Android settings.
