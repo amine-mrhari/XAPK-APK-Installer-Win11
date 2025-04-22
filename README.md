@@ -59,9 +59,10 @@ Place your .xapk file in the XAPK-APK-Installer-Win11 folder (e.g., app-name.xap
 Ensure aapt.exe is in the XAPK-APK-Installer-Win11 folder.
 
 Run:
-Set-ExecutionPolicy Bypass -Scope Process -Force
-
-.\Install-xapk.ps1
+   ```
+   Set-ExecutionPolicy Bypass -Scope Process -Force
+   .\Install-xapk.ps1
+   ```
 
 ## 🔧 Troubleshooting
 Error	Solution
@@ -81,12 +82,12 @@ Permission Denied	Run PowerShell as Administrator
 Edit these variables in the scripts if needed:
 
 # In Install-apk.ps1/Install-xapk.ps1
-```
-$apkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\app-name.apk"
-$xapkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\app-name.xapk"
-$adbPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\adb.exe"
-$adbPort = "127.0.0.1:58526"  # WSA default port
-```
+   ```
+   $apkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\app-name.apk"
+   $xapkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\app-name.xapk"
+   $adbPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\adb.exe"
+   $adbPort = "127.0.0.1:58526"  # WSA default port
+   ```
 
 ## 📝 Notes
 WSA Setup: Enable Developer Mode in Windows Subsystem for Android settings.
