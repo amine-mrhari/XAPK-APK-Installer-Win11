@@ -11,10 +11,15 @@ PowerShell scripts to install **APK/XAPK files** on Windows 11 via the Windows S
 
 XAPK-APK-Installer-Win11/
 ├── adb.exe # Android Debug Bridge
+
 ├── Install-apk.ps1 # Script to install standard APKs
+
 ├── Install-xapk.ps1 # Script to install XAPK bundles
+
 ├── run.ps1 # Helper script (optional)
+
 ├── Cursa.xapk # Example XAPK file (replace with yours)
+
 └── (Other ADB tools: fastboot.exe, etc.)
 
 ---
