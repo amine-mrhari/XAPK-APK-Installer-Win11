@@ -19,7 +19,7 @@ XAPK-APK-Installer-Win11/
 
 ├── run.ps1 # Helper script (optional)
 
-├── Cursa.xapk # Example XAPK file (replace with yours)
+├── app-name.xapk # Example XAPK file (replace with yours)
 
 └── (Other ADB tools: fastboot.exe, etc.)
 
@@ -44,14 +44,14 @@ XAPK-APK-Installer-Win11/
 ## 📋 Usage
 
 ### For APK Files
-1. Place your `.apk` file in the `XAPK-APK-Installer-Win11` folder (e.g., `Cursa.apk`).
+1. Place your `.apk` file in the `XAPK-APK-Installer-Win11` folder (e.g., `app-name.apk`).
 2. Run in PowerShell:
    ```powershell
    Set-ExecutionPolicy Bypass -Scope Process -Force
    .\Install-apk.ps1
 
 ### For XAPK Files
-Place your .xapk file in the XAPK-APK-Installer-Win11 folder (e.g., Cursa.xapk).
+Place your .xapk file in the XAPK-APK-Installer-Win11 folder (e.g., app-name.xapk).
 
 Ensure aapt.exe is in the XAPK-APK-Installer-Win11 folder.
 
@@ -71,8 +71,8 @@ Permission Denied	Run PowerShell as Administrator
 Edit these variables in the scripts if needed:
 
 # In Install-apk.ps1/Install-xapk.ps1
-$apkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\Cursa.apk"
-$xapkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\Cursa.xapk"
+$apkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\app-name.apk"
+$xapkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\app-name.xapk"
 $adbPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\adb.exe"
 $adbPort = "127.0.0.1:58526"  # WSA default port
 
