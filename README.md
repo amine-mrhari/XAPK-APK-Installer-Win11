@@ -76,7 +76,8 @@ $xapkPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\app-name.xapk"
 $adbPath = "$env:USERPROFILE\Desktop\XAPK-APK-Installer-Win11\adb.exe"
 $adbPort = "127.0.0.1:58526"  # WSA default port
 
-📝 Notes
+
+## 📝 Notes
 WSA Setup: Enable Developer Mode in Windows Subsystem for Android settings.
 
 Emulator Ports:
@@ -87,5 +88,7 @@ NoxPlayer: 127.0.0.1:62001
 
 For ARM apps on x86 systems, use **WSA PacMan**.
 
-📜 License
+
+## 📜 License
+
 MIT License. See LICENSE for details.
